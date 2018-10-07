@@ -307,7 +307,7 @@ array<float, 2> ofxGPlot::calculatePlotXLim() {
 		}
 	} else {
 		if (xLogScale && (xLim[0] <= 0 || xLim[1] <= 0)) {
-			lim = {0.1, 10};
+			lim = {0.1f, 10.f};
 		} else {
 			lim = xLim;
 		}
@@ -362,7 +362,7 @@ array<float, 2> ofxGPlot::calculatePlotYLim() {
 		}
 	} else {
 		if (yLogScale && (yLim[0] <= 0 || yLim[1] <= 0)) {
-			lim = {0.1, 10};
+			lim = {0.1f, 10.f};
 		} else {
 			lim = yLim;
 		}
